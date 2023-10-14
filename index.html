@@ -21,7 +21,81 @@
     <title>Frontend Mentor | Age calculator app</title>
   </head>
   <body>
-    Day DD Month MM Year YYYY -- years -- months -- days
+    <main
+      class="bg-neutral-light-grey min-h-screen px-4 py-[88px] font-poppins text-neutral-off-black"
+    >
+      <article
+        class="bg-neutral-white px-6 py-12 rounded-3xl rounded-br-[100px]"
+      >
+        <!-- form -->
+        <form
+          action=""
+          class="space-y-8"
+        >
+          <!-- input fields -->
+          <div class="flex gap-4">
+            <!-- input field -->
+            <label class="space-y-1">
+              <span
+                class="block text-neutral-smokey-grey font-bold uppercase text-[12px] tracking-[3px]"
+                >day</span
+              >
+              <input
+                class="w-full"
+                type="text"
+                placeholder="dd"
+              />
+            </label>
+            <!-- end of input field -->
+            <!-- input field -->
+            <label>
+              <span
+                class="block text-neutral-smokey-grey font-bold uppercase text-[12px] tracking-[3px]"
+                >month</span
+              >
+              <input
+                class="w-full"
+                type="text"
+                placeholder="mm"
+              />
+            </label>
+            <!-- end of input field -->
+            <!-- input field -->
+            <label>
+              <span
+                class="block text-neutral-smokey-grey font-bold uppercase text-[12px] tracking-[3px]"
+                >year</span
+              >
+              <input
+                class="w-full"
+                type="text"
+                placeholder="yyyy"
+              />
+            </label>
+            <!-- end of input field -->
+          </div>
+          <!-- button -->
+          <div class="relative">
+            <div class="h-[1px] bg-[#dcdcdc] absolute top-1/2 w-full"></div>
+            <button
+              class="bg-primary-purple w-16 h-16 rounded-full flex justify-center items-center relative mx-auto"
+            >
+              <img
+                class="w-6 h-6"
+                src="./assets/images/icon-arrow.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <!-- result -->
+          <div>
+            <p><span>--</span>years</p>
+            <p><span>--</span>months</p>
+            <p><span>--</span>days</p>
+          </div>
+        </form>
+      </article>
+    </main>
     <script
       type="module"
       src="./src/js/script.js"

@@ -16,6 +16,9 @@ module.exports = {
           "off-black": "hsl(0, 0%, 8%)",
         },
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],
