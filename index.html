@@ -22,52 +22,52 @@
   </head>
   <body>
     <main
-      class="bg-neutral-light-grey min-h-screen px-4 py-[88px] font-poppins text-neutral-off-black"
+      class="bg-neutral-light-grey min-h-screen px-4 py-[88px] sm:py-0 sm:grid sm:place-items-center font-poppins text-neutral-off-black"
     >
       <article
-        class="bg-neutral-white px-6 py-12 rounded-3xl rounded-br-[100px]"
+        class="bg-neutral-white px-6 py-12 sm:p-[56px] rounded-3xl rounded-br-[100px] sm:rounded-br-[200px] sm:max-w-[840px]"
       >
         <!-- form -->
         <form
           action=""
-          class="space-y-8"
+          class="space-y-8 sm:space-y-0"
         >
           <!-- input fields -->
-          <div class="flex gap-4">
+          <div class="flex gap-4 sm:gap-8 sm:justify-start">
             <!-- input field -->
-            <label class="space-y-1">
+            <label class="space-y-1 sm:space-y-2 sm:max-w-[160px]">
               <span
-                class="block text-neutral-smokey-grey font-bold uppercase text-[12px] tracking-[3px]"
+                class="block text-neutral-smokey-grey font-bold uppercase text-[12px] sm:text-[14px] tracking-[3px] sm:tracking-[3.5px]"
                 >day</span
               >
               <input
-                class="w-full"
+                class="w-full px-4 sm:px-6 py-3 rounded-[8px] shadow-input-border uppercase font-bold text-[20px] sm:text-[32px] tracking-[0.2px] sm:tracking-[0.32px] leading-[30px] sm:leading-[48px] font-poppins sm:cursor-pointer sm:hover:caret-primary-purple transition"
                 type="text"
                 placeholder="dd"
               />
             </label>
             <!-- end of input field -->
             <!-- input field -->
-            <label>
+            <label class="space-y-1">
               <span
                 class="block text-neutral-smokey-grey font-bold uppercase text-[12px] tracking-[3px]"
                 >month</span
               >
               <input
-                class="w-full"
+                class="w-full px-4 py-3 rounded-[8px] shadow-input-border uppercase font-bold text-[20px] tracking-[0.2px] leading-[30px] font-poppins"
                 type="text"
                 placeholder="mm"
               />
             </label>
             <!-- end of input field -->
             <!-- input field -->
-            <label>
+            <label class="space-y-1">
               <span
                 class="block text-neutral-smokey-grey font-bold uppercase text-[12px] tracking-[3px]"
                 >year</span
               >
               <input
-                class="w-full"
+                class="w-full px-4 py-3 rounded-[8px] shadow-input-border uppercase font-bold text-[20px] tracking-[0.2px] leading-[30px] font-poppins"
                 type="text"
                 placeholder="yyyy"
               />
@@ -89,9 +89,21 @@
           </div>
           <!-- result -->
           <div>
-            <p><span>--</span>years</p>
-            <p><span>--</span>months</p>
-            <p><span>--</span>days</p>
+            <p
+              class="flex gap-2 font-black text-[56px] leading-[110%] -tracking-[1.12px]"
+            >
+              <span class="text-primary-purple">--</span>years
+            </p>
+            <p
+              class="flex gap-2 font-black text-[56px] leading-[110%] -tracking-[1.12px]"
+            >
+              <span class="text-primary-purple">--</span>months
+            </p>
+            <p
+              class="flex gap-2 font-black text-[56px] leading-[110%] -tracking-[1.12px]"
+            >
+              <span class="text-primary-purple">--</span>days
+            </p>
           </div>
         </form>
       </article>

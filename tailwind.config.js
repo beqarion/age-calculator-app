@@ -19,6 +19,9 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      boxShadow: {
+        "input-border": " inset 0 0 0 1px #DCDCDC",
+      },
     },
   },
   plugins: [],
