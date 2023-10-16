@@ -3,19 +3,24 @@ import calculateAge from "./utils/calculateAge.js"
 import validation from "./formValidation/validation.js"
 
 // DOM Elements
-const birthDOM = {
-  date: get("#birth-date"),
-  month: get("#birth-month"),
-  year: get("#birth-year"),
+const input = {
+  dayDOM: get("#birth-date"),
+  monthDOM: get("#birth-month"),
+  yearDOM: get("#birth-year"),
 }
-const ageDOM = {
+
+const age = {
   days: get("#result-days"),
   months: get("#result-months"),
   years: get("#result-years"),
 }
+
 const form = get("#form")
 
 form.addEventListener("submit", (event) => {
   event.preventDefault()
-  validation(birthDOM)
+  if (!validation(input)) {
+    return
+  }
+  calculateAge()
 })
