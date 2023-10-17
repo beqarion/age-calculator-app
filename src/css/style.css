@@ -35,3 +35,14 @@
   font-style: italic;
   src: url("/assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
 }
+
+.validation-error span,
+.error-text {
+  color: #ff5959;
+}
+.validation-error input {
+  @apply shadow-[#FF5959];
+}
+.error-text {
+  @apply text-[14px] leading-[21px] italic;
+}

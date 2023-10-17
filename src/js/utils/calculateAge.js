@@ -1,5 +1,5 @@
-export default (dd, mm, yyyy) => {
-  const birthYear = new Date(yyyy, mm - 1, dd)
+export default ({ date, month, year }) => {
+  const birthYear = new Date(year, month - 1, date)
   const dateNow = new Date()
   let ageInMs = dateNow - birthYear
 
