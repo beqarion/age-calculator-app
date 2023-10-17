@@ -50,7 +50,7 @@ export default class MyInput {
     }
   }
   selfValidate() {
-    if (this.errorMessage) {
+    if (!this.errorMessage) {
       this.initialValidation()
     }
 
