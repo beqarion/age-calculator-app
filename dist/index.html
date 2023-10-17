@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="
+    />
+    
+    <title>Frontend Mentor | Age calculator app</title>
+    <script type="module" crossorigin src="/assets/index-fbcc64e5.js"></script>
+    <link rel="stylesheet" href="/assets/index-d8ac94ed.css">
+  </head>
+  <body>
+    <main
+      class="bg-neutral-light-grey min-h-screen px-4 py-[88px] sm:py-0 sm:grid sm:place-items-center font-poppins text-neutral-off-black"
+    >
+      <article
+        id="age-calculator"
+        class="bg-neutral-white px-6 py-12 sm:p-[56px] rounded-3xl rounded-br-[100px] sm:rounded-br-[200px] sm:max-w-[840px] sm:w-full"
+      >
+        <!-- form -->
+        <form
+          id="form"
+          action=""
+          class="space-y-8 sm:space-y-0"
+        >
+          <!-- input fields -->
+          <div class="flex gap-4 sm:gap-8 sm:justify-start">
+            <!-- input field -->
+            <label class="labels space-y-1 sm:space-y-2 sm:max-w-[160px]">
+              <span
+                class="block text-neutral-smokey-grey font-bold uppercase text-[12px] sm:text-[14px] tracking-[3px] sm:tracking-[3.5px]"
+                >day</span
+              >
+              <input
+                name="date"
+                id="birth-date"
+                class="w-full px-4 sm:px-6 py-3 rounded-[8px] shadow-input-border uppercase font-bold text-[20px] sm:text-[32px] tracking-[0.2px] sm:tracking-[0.32px] leading-[30px] sm:leading-[48px] font-poppins sm:cursor-pointer sm:hover:caret-primary-purple sm:hover:shadow-primary-purple transition hover:outline-none"
+                type="text"
+                placeholder="dd"
+              />
+            </label>
+            <!-- end of input field -->
+            <!-- input field -->
+            <label class="labels space-y-1 sm:space-y-2 sm:max-w-[160px]">
+              <span
+                class="block text-neutral-smokey-grey font-bold uppercase text-[12px] sm:text-[14px] tracking-[3px] sm:tracking-[3.5px]"
+                >month</span
+              >
+              <input
+                name="month"
+                id="birth-month"
+                class="w-full px-4 sm:px-6 py-3 rounded-[8px] shadow-input-border uppercase font-bold text-[20px] sm:text-[32px] tracking-[0.2px] sm:tracking-[0.32px] leading-[30px] sm:leading-[48px] font-poppins sm:cursor-pointer sm:hover:caret-primary-purple sm:hover:shadow-primary-purple transition hover:outline-none"
+                type="text"
+                placeholder="mm"
+              />
+            </label>
+            <!-- end of input field -->
+            <!-- input field -->
+            <label class="labels space-y-1 sm:space-y-2 sm:max-w-[160px]">
+              <span
+                class="block text-neutral-smokey-grey font-bold uppercase text-[12px] sm:text-[14px] tracking-[3px] sm:tracking-[3.5px]"
+                >year</span
+              >
+              <input
+                name="year"
+                id="birth-year"
+                class="w-full px-4 sm:px-6 py-3 rounded-[8px] shadow-input-border uppercase font-bold text-[20px] sm:text-[32px] tracking-[0.2px] sm:tracking-[0.32px] leading-[30px] sm:leading-[48px] font-poppins sm:cursor-pointer sm:hover:caret-primary-purple sm:hover:shadow-primary-purple transition hover:outline-none"
+                type="text"
+                placeholder="yyyy"
+              />
+            </label>
+            <!-- end of input field -->
+          </div>
+          <!-- button -->
+          <div class="relative">
+            <div class="h-[1px] bg-[#dcdcdc] absolute top-1/2 w-full"></div>
+            <button
+              id="submit-btn"
+              class="transition bg-primary-purple sm:hover:bg-neutral-off-black w-16 h-16 sm:w-24 sm:h-24 rounded-full flex justify-center items-center relative mx-auto sm:mr-0"
+            >
+              <img
+                class="w-6 h-6 sm:w-[44px] sm:h-[44px]"
+                src="/assets/icon-arrow-ca520b94.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <!-- result -->
+          <div id="results">
+            <p
+              class="flex gap-2 font-black text-[56px] sm:text-[104px] leading-[110%] -tracking-[1.12px] sm:-tracking-[2.08px]"
+            >
+              <span
+                id="result-years"
+                class="text-primary-purple"
+                >--</span
+              >years
+            </p>
+            <p
+              class="flex gap-2 font-black text-[56px] sm:text-[104px] leading-[110%] -tracking-[1.12px] sm:-tracking-[2.08px]"
+            >
+              <span
+                id="result-months"
+                class="text-primary-purple"
+                >--</span
+              >months
+            </p>
+            <p
+              class="flex gap-2 font-black text-[56px] sm:text-[104px] leading-[110%] -tracking-[1.12px] sm:-tracking-[2.08px]"
+            >
+              <span
+                id="result-days"
+                class="text-primary-purple"
+                >--</span
+              >days
+            </p>
+          </div>
+        </form>
+      </article>
+    </main>
+    
+  </body>
+</html>
