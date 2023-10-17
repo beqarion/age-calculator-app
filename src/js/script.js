@@ -37,4 +37,4 @@ form.addEventListener("submit", (event) => {
     updateResults(age, results)
   }
 })
-// document.addEventListener("DOMContentLoaded", initialAnimation)
+document.addEventListener("DOMContentLoaded", initialAnimation)
