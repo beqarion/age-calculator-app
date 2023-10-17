@@ -25,6 +25,7 @@
       class="bg-neutral-light-grey min-h-screen px-4 py-[88px] sm:py-0 sm:grid sm:place-items-center font-poppins text-neutral-off-black"
     >
       <article
+        id="age-calculator"
         class="bg-neutral-white px-6 py-12 sm:p-[56px] rounded-3xl rounded-br-[100px] sm:rounded-br-[200px] sm:max-w-[840px] sm:w-full"
       >
         <!-- form -->
@@ -36,7 +37,7 @@
           <!-- input fields -->
           <div class="flex gap-4 sm:gap-8 sm:justify-start">
             <!-- input field -->
-            <label class="space-y-1 sm:space-y-2 sm:max-w-[160px]">
+            <label class="labels space-y-1 sm:space-y-2 sm:max-w-[160px]">
               <span
                 class="block text-neutral-smokey-grey font-bold uppercase text-[12px] sm:text-[14px] tracking-[3px] sm:tracking-[3.5px]"
                 >day</span
@@ -51,7 +52,7 @@
             </label>
             <!-- end of input field -->
             <!-- input field -->
-            <label class="space-y-1 sm:space-y-2 sm:max-w-[160px]">
+            <label class="labels space-y-1 sm:space-y-2 sm:max-w-[160px]">
               <span
                 class="block text-neutral-smokey-grey font-bold uppercase text-[12px] sm:text-[14px] tracking-[3px] sm:tracking-[3.5px]"
                 >month</span
@@ -66,7 +67,7 @@
             </label>
             <!-- end of input field -->
             <!-- input field -->
-            <label class="space-y-1 sm:space-y-2 sm:max-w-[160px]">
+            <label class="labels space-y-1 sm:space-y-2 sm:max-w-[160px]">
               <span
                 class="block text-neutral-smokey-grey font-bold uppercase text-[12px] sm:text-[14px] tracking-[3px] sm:tracking-[3.5px]"
                 >year</span
@@ -85,6 +86,7 @@
           <div class="relative">
             <div class="h-[1px] bg-[#dcdcdc] absolute top-1/2 w-full"></div>
             <button
+              id="submit-btn"
               class="transition bg-primary-purple sm:hover:bg-neutral-off-black w-16 h-16 sm:w-24 sm:h-24 rounded-full flex justify-center items-center relative mx-auto sm:mr-0"
             >
               <img
@@ -95,7 +97,7 @@
             </button>
           </div>
           <!-- result -->
-          <div>
+          <div id="results">
             <p
               class="flex gap-2 font-black text-[56px] sm:text-[104px] leading-[110%] -tracking-[1.12px] sm:-tracking-[2.08px]"
             >

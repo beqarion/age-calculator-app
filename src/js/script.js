@@ -2,7 +2,7 @@ import get from "./utils/getElement.js"
 import calculateAge from "./utils/calculateAge.js"
 import validateAll from "./formValidation/validation.js"
 import updateResults from "./domManipulation/updateResults.js"
-
+import initialAnimation from "./animations/initialAnimation.js"
 // DOM Elements
 const input = {
   dayDOM: get("#birth-date"),
@@ -37,3 +37,4 @@ form.addEventListener("submit", (event) => {
     updateResults(age, results)
   }
 })
+document.addEventListener("DOMContentLoaded", initialAnimation)
