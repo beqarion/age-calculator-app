@@ -11,15 +11,22 @@ export default function validateForm() {
     acc[el.name] = el.inputValue
     return acc
   }, {})
-
   inputsArray.forEach((el, i, arr) => {
+    const dateNow = new Date()
     // year validation
     if (el.name === "year" && year > new Date().getFullYear()) {
       el.errorMessage = "Must be in the past"
     }
     // month validation
-    if (el.name === "month" && month && (month < 1 || month > 12)) {
-      el.errorMessage = "Must be a valid month"
+    if (el.name === "month") {
+      if (month && (month < 1 || month > 12)) {
+        el.errorMessage = "Must be a valid month"
+      } else if (
+        +year === dateNow.getFullYear() &&
+        +month > dateNow.getMonth() + 1
+      ) {
+        el.errorMessage = "Must be in the past"
+      }
     }
     // date validation
     if (el.name === "date" && date) {
@@ -31,12 +38,19 @@ export default function validateForm() {
         +date > 31
       ) {
         el.errorMessage = "Must be a valid day"
+      } else if (
+        +year === dateNow.getFullYear() &&
+        +month === dateNow.getMonth() + 1 &&
+        +date > dateNow.getDate()
+      ) {
+        console.log("from date field")
+        el.errorMessage = "Must be in the past"
       }
     }
     el.selfValidate()
   })
 
   console.log(inputsArray.map((e) => e.errorMessage))
-  console.log(inputsArray);
+  console.log(inputsArray)
   return inputsArray
 }
